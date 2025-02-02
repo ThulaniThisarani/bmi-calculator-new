@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+
+    tools:context=".SimpleActivity">
+
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="315dp"
+        android:layout_height="322dp"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:layout_above="@id/contentlayout"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/check">
+
+    </ImageView>
+
+
+    <RelativeLayout
+        android:id="@+id/contentlayout"
+        android:layout_width="334dp"
+        android:layout_height="197dp"
+        android:layout_centerInParent="true"
+
+        android:background="#bed543"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/bmidisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="22"
+            android:textColor="@color/black"
+            android:textSize="60sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/genderdisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bmidisplay"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="Gender"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/bmicategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/genderdisplay"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+
+            android:text="Your BMI Category Is"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+    </RelativeLayout>
+
+
+
+
+    <android.widget.Button
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/recalculatebmi"
+        android:layout_below="@id/contentlayout"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/buttonbackground"
+        android:text="RECALCULATE YOUR BMI"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        >
+
+    </android.widget.Button>
+
+    <android.widget.Button
+        android:id="@+id/food"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/contentlayout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="20dp"
+        android:background="#6676f0"
+        android:text="Suitable Foods"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold">
+
+    </android.widget.Button>
+
+    <android.widget.Button
+        android:id="@+id/details"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/contentlayout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="210dp"
+        android:layout_marginRight="20dp"
+        android:background="#4e8ca1"
+        android:text="Save details"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold">
+
+    </android.widget.Button>
+
+</RelativeLayout>

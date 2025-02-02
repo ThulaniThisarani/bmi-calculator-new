@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#a4aaa7"
+    tools:context=".Add">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Channeling Form"
+                android:background="#118409"
+                android:textSize="24sp"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/counsellor"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <!-- Full Name -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:paddingBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Name"
+            android:importantForAccessibility="yes"
+            android:minHeight="48dp" />
+
+        <!-- Age -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Age"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/et_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Age"
+            android:importantForAccessibility="yes"
+            android:inputType="number"
+            android:minHeight="48dp" />
+
+        <!-- BMI Value -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BMI Value"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/et_bmi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter BMI Value"
+            android:importantForAccessibility="yes"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp" />
+
+        <!-- Date Picker -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/et_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="false"
+            android:hint="Select Date"
+            android:importantForAccessibility="yes"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Counselor"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp"/>
+
+        <!-- Checkboxes -->
+        <CheckBox
+            android:id="@+id/cb_counselor1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dr Anura Adhikari"/>
+
+        <CheckBox
+            android:id="@+id/cb_counselor2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dr Sammani Nawarathne"/>
+
+        <CheckBox
+            android:id="@+id/cb_counselor3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dr Kulan Gamage"/>
+
+        <CheckBox
+            android:id="@+id/cb_counselor4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dr Pradhip De Silva"/>
+
+
+       
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textSize="25sp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#682cab"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+</ScrollView>
