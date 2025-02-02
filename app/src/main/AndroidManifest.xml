@@ -29,8 +29,27 @@
             android:exported="false" /> <!-- <activity -->
         <!-- android:name=".splash" -->
         <!-- android:exported="false" /> -->
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".Singin"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Food"
+            android:exported="false" />
+        <activity
+            android:name=".SimpleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BMIActivity"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".splash" -->
+        <!-- android:exported="false" /> -->
+        <activity
+            android:name=".Splash"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
