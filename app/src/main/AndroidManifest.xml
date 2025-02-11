@@ -18,17 +18,13 @@
         <activity
             android:name=".Add"
             android:exported="false" />
-        <activity
-            android:name=".Form"
-            android:exported="false" />
+
         <activity
             android:name=".SimpleActivity"
             android:exported="false" />
         <activity
             android:name=".BMIActivity"
-            android:exported="false" /> <!-- <activity -->
-        <!-- android:name=".splash" -->
-        <!-- android:exported="false" /> -->
+            android:exported="false" />
         <activity
             android:name=".Login"
             android:exported="false" />
@@ -41,13 +37,7 @@
         <activity
             android:name=".Food"
             android:exported="false" />
-        <activity
-            android:name=".SimpleActivity"
-            android:exported="false" />
-        <activity
-            android:name=".BMIActivity"
-            android:exported="false" /> <!-- <activity -->
-        <!-- android:name=".splash" -->
+
         <!-- android:exported="false" /> -->
         <activity
             android:name=".Splash"
